@@ -1,6 +1,9 @@
 const express = require("express");
 const mongoose = require("mongoose");
 
+const Recipe = require("./models/Recipe");
+const User = require("./models/User");
+
 const app = express();
 
 const db = require("./config/keys").mongoURI;
