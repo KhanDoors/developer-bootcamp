@@ -7,7 +7,11 @@ nav {
   margin-bottom: 1em;
   padding-bottom: 0.2em;
   padding-top: 2em;
-  background-color: #efefef;
+  background-color: #b13a32;
+}
+
+nav button {
+  background-color: #d85a5a;
 }
 
 nav ul {
