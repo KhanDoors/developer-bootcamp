@@ -4,6 +4,8 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const Recipe = require("./models/Recipe");
 const User = require("./models/User");
+const secret = require("./config/secret");
+const jwt = require("jsonwebtoken");
 
 const db = require("./config/keys").mongoURI;
 
@@ -40,6 +42,20 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
+//set up JWT middleware
+app.use(async (req, res, next) => {
+  const token = req.headers["authorization"];
+  if (token !== "null") {
+    try {
+      const currentUser = await jwt.verify(token, secret.secretOrKey);
+      req.currentUser = currentUser;
+    } catch (err) {
+      console.error(err);
+    }
+  }
+  next();
+});
+
 //create Graphiql GUI
 app.use("/graphiql", graphiqlExpress({ endpointURL: "/graphql" }));
 
@@ -47,13 +63,14 @@ app.use("/graphiql", graphiqlExpress({ endpointURL: "/graphql" }));
 app.use(
   "/graphql",
   bodyParser.json(),
-  graphqlExpress({
+  graphqlExpress(({ currentUser }) => ({
     schema,
     context: {
       Recipe,
-      User
+      User,
+      currentUser
     }
-  })
+  }))
 );
 
 const PORT = process.env.PORT || 4000;

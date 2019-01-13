@@ -18,6 +18,15 @@ export const GET_ALL_RECIPES = gql`
 //RECIPEIES MUTATIONS
 
 //USER QUERIES
+export const GET_CURRENT_USER = gql`
+  query {
+    getCurrentUser {
+      username
+      joinDate
+      email
+    }
+  }
+`;
 
 //USER MUTATIONS
 

@@ -18,8 +18,9 @@ export class Signin extends Component {
 
   handleSubmit = (e, signinUser) => {
     e.preventDefault();
-    signinUser().then(data => {
+    signinUser().then(({ data }) => {
       console.log(data);
+      localStorage.setItem("token", data.signinUser.token);
       this.setState({
         username: "",
         password: ""
