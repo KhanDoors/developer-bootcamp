@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background: #009d57;
 }
 
 nav {
@@ -7,11 +8,12 @@ nav {
   margin-bottom: 1em;
   padding-bottom: 0.2em;
   padding-top: 2em;
-  background-color: #b13a32;
+  background-color: #0f2925;
+  color: #9edfff;
 }
 
 nav button {
-  background-color: #d85a5a;
+  background-color: #677a7f;
 }
 
 nav ul {

@@ -17,6 +17,7 @@ import Navbar from "./components/Navbar";
 import Search from "./components/Recipe/Search";
 import AddRecipe from "./components/Recipe/AddRecipe";
 import Profile from "./components/Profile/Profile";
+import RecipePage from "../src/components/Recipe/RecipePage";
 
 const client = new ApolloClient({
   uri: "http://localhost:4000/graphql",
@@ -48,6 +49,7 @@ const Root = ({ refetch, session }) => (
         <Route path="/signin" render={() => <Signin refetch={refetch} />} />
         <Route path="/signup" render={() => <Signup refetch={refetch} />} />
         <Route path="/recipe/add" component={AddRecipe} />
+        <Route path="/recipes/:_id" component={RecipePage} />
         <Route path="/profile" component={Profile} />
         <Redirect to="/" />
       </Switch>
