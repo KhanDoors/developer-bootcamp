@@ -38,22 +38,33 @@ class AddRecipe extends Component {
           <select name="category" onChange={this.handleChange}>
             value={category}
             <option value="HTML-CSS">HTML-CSS</option>
-            <option value="React">React</option>
-            <option value="MERN">MERN Stack</option>
             <option value="Javascript">Javascript</option>
-            <option value="Node">Node</option>
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+            <option value="C+">C+</option>
+            <option value="C++">C++</option>
+            <option value="Mongo">MongoDB</option>
+            <option value="Mysql">MySQL</option>
+            <option value="React">React</option>
+            <option value="Vue">Vue</option>
+            <option value="Angular">Angular</option>
             <option value="Express">Express</option>
+            <option value="Node">Node</option>
+            <option value="MERN">MERN Stack</option>
+            <option value="MEAN">MEAN Stack</option>
+            <option value="Graphql">Graphql</option>
+            <option value="UI/UXDesign">UI/UXDesign</option>
           </select>
           <input
             type="text"
             name="description"
-            placeholder="Add Description"
+            placeholder="Description"
             onChange={this.handleChange}
             value={description}
           />
           <textarea
             name="instructions"
-            placeholder="tips"
+            placeholder="Instructions"
             onChange={this.handleChange}
             value={instructions}
           />
