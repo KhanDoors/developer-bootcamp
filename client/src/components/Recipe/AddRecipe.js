@@ -42,7 +42,7 @@ class AddRecipe extends Component {
   };
 
   validateForm = () => {
-    const { name, instructions, category, description, username } = this.state;
+    const { name, instructions, category, description } = this.state;
 
     const isInvalid = !name || !instructions || !category || !description;
     return isInvalid;
@@ -100,7 +100,7 @@ class AddRecipe extends Component {
                   <option value="MERN">MERN Stack</option>
                   <option value="MEAN">MEAN Stack</option>
                   <option value="Graphql">Graphql</option>
-                  <option value="UI/UXDesign">UI/UXDesign</option>
+                  <option value="UI/UX Design">UI/UXDesign</option>
                 </select>
                 <input
                   type="text"
