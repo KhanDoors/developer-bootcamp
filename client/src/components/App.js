@@ -7,10 +7,12 @@ import RecipeItem from "./Recipe/RecipeItem";
 
 const App = () => (
   <div className="App">
-    <h1>
-      This app was designed to give the user a catalgue of coding lessons.
-      Choose a topic you are interested in and learn something new!
-    </h1>
+    <h4>
+      This app was designed as a coding lesson library. I have used most of
+      these lessons to build my own knowledge. I give my opinion about the
+      different links as a cheatsheet for those wanting to learn to code. So
+      choose a topic you are interested in, learn something new and fun!
+    </h4>
     <Query query={GET_ALL_RECIPES}>
       {({ data, loading, error }) => {
         if (loading) return <div>Loading...</div>;
