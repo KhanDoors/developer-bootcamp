@@ -1,7 +1,16 @@
 import React from "react";
-import { Query } from "react-apollo";
-import { GET_USER_RECIPES } from "../queries";
+import { Query, Mutation } from "react-apollo";
+import { GET_USER_RECIPES, DELETE_USER_RECIPE } from "../queries";
 import { Link } from "react-router-dom";
+
+const handleDelete = deleteUserRecipe => {
+  const confirmDelete = window.confirm("Are you sure?");
+  if (confirmDelete) {
+    deleteUserRecipe().then(({ data }) => {
+      console.log(data);
+    });
+  }
+};
 
 const UserRecipes = ({ username }) => (
   <Query query={GET_USER_RECIPES} variables={{ username }}>
@@ -17,7 +26,20 @@ const UserRecipes = ({ username }) => (
               <Link to={`/recipes/${recipe._id}`}>
                 <p>{recipe.name}</p>{" "}
               </Link>
-              <p>Likes: {recipe.likes}</p>
+              <p style={{ marginBottom: "0" }}>Likes: {recipe.likes}</p>
+              <Mutation
+                mutation={DELETE_USER_RECIPE}
+                variables={{ _id: recipe._id }}
+              >
+                {deleteUserRecipe => (
+                  <p
+                    className="delete-button"
+                    onClick={() => handleDelete(deleteUserRecipe)}
+                  >
+                    Delete
+                  </p>
+                )}
+              </Mutation>
             </li>
           ))}
         </ul>
