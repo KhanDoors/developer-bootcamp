@@ -7,20 +7,14 @@ import RecipeItem from "./Recipe/RecipeItem";
 
 const App = () => (
   <div className="App">
-    <h5>
-      This app was designed as a coding lesson library. I have used most of
-      these lessons to build my own knowledge. I give my opinion about the
-      different links as a cheatsheet for those wanting to learn to code. Please
-      choose a lesson you are interested in and try to have some fun while
-      learning something new!
-    </h5>
+    <h1 className="main-title">So much to learn, so little ...</h1>
     <Query query={GET_ALL_RECIPES}>
       {({ data, loading, error }) => {
         if (loading) return <div>Loading...</div>;
         if (error) return <div>Error</div>;
         // console.log(data);
         return (
-          <ul>
+          <ul className="cards">
             {data.getAllRecipes.map(recipe => (
               <RecipeItem key={recipe._id} {...recipe} />
             ))}

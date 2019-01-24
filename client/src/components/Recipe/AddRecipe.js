@@ -14,6 +14,7 @@ import withAuth from "../withAuth";
 class AddRecipe extends Component {
   state = {
     name: "",
+    imageUrl: "",
     instructions: "",
     category: "Javascript",
     description: "",
@@ -38,6 +39,7 @@ class AddRecipe extends Component {
     addRecipe().then(({ data }) => {
       this.setState({
         name: "",
+        imageUrl: "",
         instructions: "",
         category: "Javascript",
         description: "",
@@ -48,9 +50,10 @@ class AddRecipe extends Component {
   };
 
   validateForm = () => {
-    const { name, instructions, category, description } = this.state;
+    const { name, imageUrl, instructions, category, description } = this.state;
 
-    const isInvalid = !name || !instructions || !category || !description;
+    const isInvalid =
+      !name || !imageUrl || !instructions || !category || !description;
     return isInvalid;
   };
 
@@ -65,12 +68,26 @@ class AddRecipe extends Component {
   };
 
   render() {
-    const { name, instructions, category, description, username } = this.state;
+    const {
+      name,
+      imageUrl,
+      instructions,
+      category,
+      description,
+      username
+    } = this.state;
 
     return (
       <Mutation
         mutation={ADD_RECIPE}
-        variables={{ name, instructions, category, description, username }}
+        variables={{
+          name,
+          imageUrl,
+          instructions,
+          category,
+          description,
+          username
+        }}
         refetchQueries={() => [
           { query: GET_USER_RECIPES, variables: { username } }
         ]}
@@ -90,6 +107,13 @@ class AddRecipe extends Component {
                   placeholder="Lesson Name"
                   onChange={this.handleChange}
                   value={name}
+                />
+                <input
+                  type="text"
+                  name="imageUrl"
+                  placeholder="Lesson Image"
+                  onChange={this.handleChange}
+                  value={imageUrl}
                 />
                 <select name="category" onChange={this.handleChange}>
                   value={category}
