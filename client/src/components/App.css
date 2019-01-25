@@ -6,7 +6,7 @@ nav {
   text-align: center;
   padding-bottom: 0.2em;
   padding-top: 2em;
-  background-color: #af5d5d;
+  background-color: #4a6c74;
   box-shadow: -3px 3px 10px 0px rgba(168, 168, 168, 0.7);
 }
 
@@ -60,7 +60,7 @@ nav a:link {
 
 .main-title {
   padding: 0.5em;
-  color: #12404e;
+  color: #7bb3c0;
   margin: 0;
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -83,7 +83,7 @@ nav a:link {
   justify-content: flex-end;
   box-shadow: -3px 3px 10px 0px rgba(168, 168, 168, 0.4);
   text-align: center;
-  background: #ddd;
+  background: #46e9a1;
   transition: all 0.3s;
 }
 
@@ -144,7 +144,28 @@ nav a:link {
   background: linear-gradient(to right, rgb(80, 146, 143), rgb(2, 105, 100));
 }
 
+.HTML-CSS {
+  width: 20%;
+  margin: 20px;
+  z-index: 1;
+  padding: 7px;
+  border-radius: 5px;
+  color: white;
+  background: #50c9c3;
+  background: linear-gradient(to right, rgb(80, 146, 143), rgb(2, 105, 100));
+}
+
 .Graphql {
+  width: 100px;
+  margin: 20px;
+  z-index: 1;
+  color: white;
+  padding: 7px;
+  background: #9d50bb;
+  border-radius: 50px 120px 120px;
+}
+
+.MERN {
   width: 100px;
   margin: 20px;
   z-index: 1;
