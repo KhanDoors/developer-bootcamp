@@ -8,7 +8,7 @@ import {
 } from "../queries/index";
 import Error from "../Error";
 import { withRouter } from "react-router-dom";
-
+import CKEditor from "react-ckeditor-component";
 import withAuth from "../withAuth";
 
 class AddRecipe extends Component {
@@ -32,6 +32,11 @@ class AddRecipe extends Component {
     this.setState({
       [name]: value
     });
+  };
+
+  handleEditorChange = event => {
+    const newContent = event.editor.getData();
+    this.setState({ instructions: newContent });
   };
 
   handleSubmit = (event, addRecipe) => {
@@ -142,12 +147,18 @@ class AddRecipe extends Component {
                   onChange={this.handleChange}
                   value={description}
                 />
-                <textarea
+                <label htmlFor="instructions">Add Instructions</label>
+                <CKEditor
+                  name="instrcutions"
+                  content={instructions}
+                  events={{ change: this.handleEditorChange }}
+                />
+                {/* <textarea
                   name="instructions"
                   placeholder="Instructions"
                   onChange={this.handleChange}
                   value={instructions}
-                />
+                /> */}
                 <button
                   disabled={loading || this.validateForm()}
                   type="submit"

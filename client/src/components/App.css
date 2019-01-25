@@ -63,7 +63,7 @@ nav a:link {
   color: #12404e;
   margin: 0;
   text-decoration-line: underline;
-  text-decoration-style: dotted;
+  text-decoration-style: solid;
 }
 
 .cards {

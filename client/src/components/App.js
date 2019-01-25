@@ -7,7 +7,9 @@ import RecipeItem from "./Recipe/RecipeItem";
 
 const App = () => (
   <div className="App">
-    <h1 className="main-title">So much to learn, so little ...</h1>
+    <h1 className="main-title">
+      <strong>KhanDoor Library</strong>
+    </h1>
     <Query query={GET_ALL_RECIPES}>
       {({ data, loading, error }) => {
         if (loading) return <div>Loading...</div>;
