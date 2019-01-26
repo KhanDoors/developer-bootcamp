@@ -32,7 +32,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="main-title">
-          <strong>KhanDoor Library</strong>
+          <strong>KhanDoor Developer Library</strong>
         </h1>
         <Query query={GET_ALL_RECIPES}>
           {({ data, loading, error }) => {
