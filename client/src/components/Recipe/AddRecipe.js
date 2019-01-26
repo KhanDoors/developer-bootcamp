@@ -46,7 +46,7 @@ class AddRecipe extends Component {
         name: "",
         imageUrl: "",
         instructions: "",
-        category: "Javascript",
+        category: "HTML-CSS",
         description: "",
         username: ""
       });
