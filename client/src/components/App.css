@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin-top: 1em;
 }
 
 nav {
@@ -243,7 +244,7 @@ nav a:link {
 }
 
 .recipe-instructions * {
-  padding-bottom: 0.2em;
+  padding-bottom: 0.5em;
 }
 
 .recipe-instructions__title {

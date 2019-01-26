@@ -14,7 +14,7 @@ const RecipePage = ({ match }) => {
         if (error) return <div>Error</div>;
 
         return (
-          <div className="App">
+          <div>
             <div
               style={{
                 background: `url(${

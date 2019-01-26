@@ -66,6 +66,7 @@ export const ADD_RECIPE = gql`
       instructions
       createdDate
       likes
+      username
     }
   }
 `;

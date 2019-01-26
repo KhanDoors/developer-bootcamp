@@ -7,7 +7,7 @@ const User = require("./models/User");
 const secret = require("./config/secret");
 const jwt = require("jsonwebtoken");
 
-const db = require("./config/keys").mongoURI;
+const db = require("./config/secret").mongoURI;
 
 //bring in graphql express middleware
 const { graphiqlExpress, graphqlExpress } = require("apollo-server-express");

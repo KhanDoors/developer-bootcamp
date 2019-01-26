@@ -76,9 +76,9 @@ class AddRecipe extends Component {
     const {
       name,
       imageUrl,
-      instructions,
       category,
       description,
+      instructions,
       username
     } = this.state;
 
@@ -88,9 +88,9 @@ class AddRecipe extends Component {
         variables={{
           name,
           imageUrl,
-          instructions,
           category,
           description,
+          instructions,
           username
         }}
         refetchQueries={() => [
@@ -101,7 +101,7 @@ class AddRecipe extends Component {
         {(addRecipe, { data, loading, error }) => {
           return (
             <div className="App">
-              <h2 className="App">What have you got?</h2>
+              <h2 className="main-title">What have you got?</h2>
               <form
                 className="form"
                 onSubmit={event => this.handleSubmit(event, addRecipe)}
@@ -114,6 +114,7 @@ class AddRecipe extends Component {
                   onChange={this.handleChange}
                   value={name}
                 />
+                <label htmlFor="imageUrl">Lesson Image</label>
                 <input
                   type="text"
                   name="imageUrl"
@@ -121,6 +122,7 @@ class AddRecipe extends Component {
                   onChange={this.handleChange}
                   value={imageUrl}
                 />
+                <label htmlFor="category">Category of Tech</label>
                 <select
                   name="category"
                   onChange={this.handleChange}
@@ -144,6 +146,7 @@ class AddRecipe extends Component {
                   <option value="Graphql">Graphql</option>
                   <option value="UI/UX Design">UI/UXDesign</option>
                 </select>
+                <label htmlFor="description">Lesson Description</label>
                 <input
                   type="text"
                   name="description"
