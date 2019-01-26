@@ -60,7 +60,7 @@ nav a:link {
 
 .main-title {
   padding: 0.5em;
-  color: #7bb3c0;
+  color: #213134;
   margin: 0;
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -203,7 +203,7 @@ nav a:link {
 
 .recipe {
   text-align: center;
-  background: whitesmoke;
+  background: #a7685a;
   padding: 1em;
 }
 
@@ -243,14 +243,18 @@ nav a:link {
 }
 
 .recipe-instructions * {
-  padding-bottom: 0.5em;
+  padding-bottom: 0.2em;
 }
 
 .recipe-instructions__title {
   font-weight: 200;
   letter-spacing: 2px;
-  color: #1eaedb;
+  color: #4a6c74;
   text-decoration: underline;
+}
+
+.signout-button {
+  background-color: #f15f79;
 }
 
 .like-button {

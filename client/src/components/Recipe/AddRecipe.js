@@ -101,7 +101,7 @@ class AddRecipe extends Component {
         {(addRecipe, { data, loading, error }) => {
           return (
             <div className="App">
-              <h2 className="App">Add Video</h2>
+              <h2 className="App">What have you got?</h2>
               <form
                 className="form"
                 onSubmit={event => this.handleSubmit(event, addRecipe)}
@@ -149,7 +149,7 @@ class AddRecipe extends Component {
                 />
                 <label htmlFor="instructions">Add Instructions</label>
                 <CKEditor
-                  name="instrcutions"
+                  name="instructions"
                   content={instructions}
                   events={{ change: this.handleEditorChange }}
                 />
@@ -163,6 +163,7 @@ class AddRecipe extends Component {
                   disabled={loading || this.validateForm()}
                   type="submit"
                   className="button-primary"
+                  style={{ margin: "2em" }}
                 >
                   Submit
                 </button>
