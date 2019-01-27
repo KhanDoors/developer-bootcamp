@@ -193,6 +193,9 @@ const EditRecipeModal = ({
                 <option value="MERN">MERN Stack</option>
                 <option value="MEAN">MEAN Stack</option>
                 <option value="Graphql">Graphql</option>
+                <option value="Docker">Docker</option>
+                <option value="AI/ML">AI/ML</option>
+                <option value="DevOps">DevOps</option>
                 <option value="UI/UX Design">UI/UXDesign</option>
               </select>
               <label htmlFor="name">Lesson Description</label>

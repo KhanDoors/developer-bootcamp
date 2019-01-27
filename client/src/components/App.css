@@ -134,7 +134,51 @@ nav a:link {
   background: linear-gradient(to right, #514a9d, #24c6dc);
 }
 
+.Java {
+  width: 20%;
+  margin: 20px;
+  z-index: 1;
+  padding: 7px;
+  border-radius: 5px;
+  color: white;
+  background: #24c6dc;
+  background: linear-gradient(to right, #514a9d, #24c6dc);
+}
+
+.Docker {
+  width: 20%;
+  margin: 20px;
+  z-index: 1;
+  padding: 7px;
+  border-radius: 5px;
+  color: white;
+  background: #24c6dc;
+  background: linear-gradient(to right, #514a9d, #24c6dc);
+}
+
 .Mongo {
+  width: 20%;
+  margin: 20px;
+  z-index: 1;
+  padding: 7px;
+  border-radius: 5px;
+  color: white;
+  background: #50c9c3;
+  background: linear-gradient(to right, rgb(80, 146, 143), rgb(2, 105, 100));
+}
+
+.Vue {
+  width: 20%;
+  margin: 20px;
+  z-index: 1;
+  padding: 7px;
+  border-radius: 5px;
+  color: white;
+  background: #50c9c3;
+  background: linear-gradient(to right, rgb(80, 146, 143), rgb(2, 105, 100));
+}
+
+.Express {
   width: 20%;
   margin: 20px;
   z-index: 1;
@@ -156,7 +200,82 @@ nav a:link {
   background: linear-gradient(to right, rgb(80, 146, 143), rgb(2, 105, 100));
 }
 
+.AI {
+  width: 20%;
+  margin: 20px;
+  z-index: 1;
+  padding: 7px;
+  border-radius: 5px;
+  color: white;
+  background: #50c9c3;
+  background: linear-gradient(to right, rgb(80, 146, 143), rgb(2, 105, 100));
+}
+
+.UI {
+  width: 20%;
+  margin: 20px;
+  z-index: 1;
+  padding: 7px;
+  border-radius: 5px;
+  color: white;
+  background: #50c9c3;
+  background: linear-gradient(to right, rgb(80, 146, 143), rgb(2, 105, 100));
+}
+
+.Mysql {
+  width: 20%;
+  margin: 20px;
+  z-index: 1;
+  padding: 7px;
+  border-radius: 5px;
+  color: white;
+  background: #50c9c3;
+  background: linear-gradient(to right, rgb(80, 146, 143), rgb(2, 105, 100));
+}
+
+.Express {
+  width: 20%;
+  margin: 20px;
+  z-index: 1;
+  padding: 7px;
+  border-radius: 5px;
+  color: white;
+  background: #50c9c3;
+  background: linear-gradient(to right, rgb(80, 146, 143), rgb(2, 105, 100));
+}
+
+.Node {
+  width: 20%;
+  margin: 20px;
+  z-index: 1;
+  padding: 7px;
+  border-radius: 5px;
+  color: white;
+  background: #50c9c3;
+  background: linear-gradient(to right, rgb(80, 146, 143), rgb(2, 105, 100));
+}
+
 .Graphql {
+  width: 100px;
+  margin: 20px;
+  z-index: 1;
+  color: white;
+  padding: 7px;
+  background: #9d50bb;
+  border-radius: 50px 120px 120px;
+}
+
+.DevOps {
+  width: 100px;
+  margin: 20px;
+  z-index: 1;
+  color: white;
+  padding: 7px;
+  background: #9d50bb;
+  border-radius: 50px 120px 120px;
+}
+
+.React {
   width: 100px;
   margin: 20px;
   z-index: 1;
@@ -177,6 +296,36 @@ nav a:link {
 }
 
 .Javascript {
+  width: 20%;
+  margin: 20px;
+  z-index: 1;
+  padding: 7px;
+  color: white;
+  background: linear-gradient(to right, #b24592, #f15f79);
+  border-radius: 50px 120px 120px;
+}
+
+.MEAN {
+  width: 20%;
+  margin: 20px;
+  z-index: 1;
+  padding: 7px;
+  color: white;
+  background: linear-gradient(to right, #b24592, #f15f79);
+  border-radius: 50px 120px 120px;
+}
+
+.Angular {
+  width: 20%;
+  margin: 20px;
+  z-index: 1;
+  padding: 7px;
+  color: white;
+  background: linear-gradient(to right, #b24592, #f15f79);
+  border-radius: 50px 120px 120px;
+}
+
+.C {
   width: 20%;
   margin: 20px;
   z-index: 1;
