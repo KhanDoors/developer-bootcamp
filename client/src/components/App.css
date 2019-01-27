@@ -200,7 +200,7 @@ nav a:link {
   background: linear-gradient(to right, rgb(80, 146, 143), rgb(2, 105, 100));
 }
 
-.AI {
+.AI-ML {
   width: 20%;
   margin: 20px;
   z-index: 1;
@@ -211,7 +211,7 @@ nav a:link {
   background: linear-gradient(to right, rgb(80, 146, 143), rgb(2, 105, 100));
 }
 
-.UI {
+.UI-UXDesign {
   width: 20%;
   margin: 20px;
   z-index: 1;
@@ -325,7 +325,17 @@ nav a:link {
   border-radius: 50px 120px 120px;
 }
 
-.C {
+.Cplus {
+  width: 20%;
+  margin: 20px;
+  z-index: 1;
+  padding: 7px;
+  color: white;
+  background: linear-gradient(to right, #b24592, #f15f79);
+  border-radius: 50px 120px 120px;
+}
+
+.Cpp {
   width: 20%;
   margin: 20px;
   z-index: 1;

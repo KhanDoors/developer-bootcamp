@@ -132,8 +132,8 @@ class AddRecipe extends Component {
                   <option value="Javascript">Javascript</option>
                   <option value="Java">Java</option>
                   <option value="Python">Python</option>
-                  <option value="C+">C+</option>
-                  <option value="C++">C++</option>
+                  <option value="Cplus">C+</option>
+                  <option value="Cpp">C++</option>
                   <option value="Mongo">MongoDB</option>
                   <option value="Mysql">MySQL</option>
                   <option value="React">React</option>
@@ -145,9 +145,9 @@ class AddRecipe extends Component {
                   <option value="MEAN">MEAN Stack</option>
                   <option value="Graphql">Graphql</option>
                   <option value="Docker">Docker</option>
-                  <option value="AI/ML">AI/ML</option>
+                  <option value="AI-ML">AI-ML</option>
                   <option value="DevOps">DevOps</option>
-                  <option value="UI/UX Design">UI/UXDesign</option>
+                  <option value="UI-UXDesign">UI/UXDesign</option>
                 </select>
                 <label htmlFor="description">Lesson Description</label>
                 <input
