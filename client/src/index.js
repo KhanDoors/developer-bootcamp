@@ -20,7 +20,7 @@ import Profile from "./components/Profile/Profile";
 import RecipePage from "../src/components/Recipe/RecipePage";
 
 const client = new ApolloClient({
-  uri: "http://localhost:4000/graphql",
+  uri: "https://khandoor-dev-library.herokuapp.com/graphql",
   fetchOptions: {
     credentials: "include"
   },
