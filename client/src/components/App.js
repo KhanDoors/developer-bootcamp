@@ -10,7 +10,7 @@ import Spinner from "./Spinner";
 const RecipeList = posed.ul({
   shown: {
     x: "0%",
-    staggerChildren: 300
+    staggerChildren: 250
   },
   hidden: {
     x: "-100%"
