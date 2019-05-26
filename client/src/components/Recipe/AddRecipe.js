@@ -132,7 +132,7 @@ class AddRecipe extends Component {
                   <option value="Javascript">Javascript</option>
                   <option value="Java">Java</option>
                   <option value="Python">Python</option>
-                  <option value="Cplus">C+</option>
+                  <option value="CS">C#</option>
                   <option value="Cpp">C++</option>
                   <option value="Mongo">MongoDB</option>
                   <option value="Mysql">MySQL</option>
